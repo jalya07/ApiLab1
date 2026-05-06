@@ -1,3 +1,6 @@
+using ApiLab.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace ApiLab;
 
 public class Program
@@ -5,8 +8,12 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        var config = builder.Configuration;
 
         // Add services to the container.
+        builder.Services.AddDbContext<ApiLabAppDbContext>(options =>
+            options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
+
 
         builder.Services.AddControllers();
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
