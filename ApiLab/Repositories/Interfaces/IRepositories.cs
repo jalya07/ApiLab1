@@ -1,6 +1,11 @@
 namespace ApiLab.Repositories.Interfaces;
 
-public interface IRepositories
+public interface IRepositories<T> where T : class
 {
-    
+    Task<List<T>> GetAllAsync();
+    Task<T?> GetByIdAsync(int id);
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(T entity);
+    Task SaveAsync();
 }
