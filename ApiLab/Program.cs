@@ -30,7 +30,7 @@ public class Program
         
         builder.Services.AddFluentValidationAutoValidation();
         builder.Services.AddValidatorsFromAssemblyContaining<StudentCreateDTOValidation>();
-        builder.Services.AddValidatorsFromAssemblyContaining<StudentCreateDTOValidation>();
+        builder.Services.AddValidatorsFromAssemblyContaining<StudentUpdateDTOValidation>();
         
         
         builder.Services.AddControllers();
