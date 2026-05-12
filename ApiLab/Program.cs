@@ -6,7 +6,7 @@ using ApiLab.Validations;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+// using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace ApiLab;
 
@@ -56,6 +56,8 @@ public class Program
                     }
                 });
             });
+            
+            
         app.UseHttpsRedirection();
         app.UseAuthorization();
 

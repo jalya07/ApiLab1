@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c44072c0cf853bc85047a42a81f187cc1de6565f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4f78e2e71d7c4addefb6fb0907aad88c012f5ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
